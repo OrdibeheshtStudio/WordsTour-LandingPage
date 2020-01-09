@@ -3,6 +3,5 @@
 *.log
 npm-debug.log*
 /node_modules/
-/.deploy/
+/.publish/
 /dist/
-.DS_Store
