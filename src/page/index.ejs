@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="fa-ir">
-    <% VERSION = "1.0.1"; %>
-    <% URL = "https://www.wordstour.com/"; %>
-    <% TITLE = "تورکلمات | ذهنت رو تیز کن"; %>
-    <% DESCRIPTION = ""; %>
-    <% KEYWORDS = ""; %>
+<% VERSION = "1.0.1"; %>
+<% URL = "https://www.wordstour.com/"; %>
+<% TITLE = "تورکلمات | ذهنت رو تیز کن"; %>
+<% DESCRIPTION = ""; %>
+<% KEYWORDS = ""; %>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- TITLE %></title>
     <meta name="description" content="<%- DESCRIPTION %>">
@@ -41,7 +42,7 @@
     <link rel="stylesheet" href="css/style.css?v=<%- VERSION %>">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102933584-6"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102933584-7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -51,9 +52,7 @@
 
         gtag('js', new Date());
 
-        //TODO: Config this
-        gtag('config', 'UA-102933584-6');
-        gtag('config', 'AW-782563262');
+        gtag('config', 'UA-102933584-7');
     </script>
     <!-- Event snippet for Check Landing Page conversion page
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
@@ -75,10 +74,10 @@
         {
             "@context": "http://schema.org",
             "@type": "VideoGame",
-            "name": "کلماتیک - ماجراجویی با کلمات",
-            "url": "http://kalamatic.com",
-            "image": "https://www.kalamatic.com/img/logo.png",
-            "description": "یک بازی بی نهایت جذاب و اعتیادآور که این روزها همه در موردش صحبت میکنن، آسون شروع میشه و خیلی سریع شما رو به چالش میکشه. فکر میکنی چندتا کلمه بلدی؟! چالشی شیرین از جنس کلمات که شما رو ساعتها سرگرم میکنه. اگر دنبال جایگزین آمیرزا برای iOS هستی کلماتیک رو حتماً امتحان کن.",
+            "name": "تورکلمات | ذهنت رو تیز کن",
+            "url": "https://www.wordstour.com",
+            "image": "https://www.wordstour.com/img/logo.png?v=<%- VERSION %>",
+            "description": "",
             "inLanguage": [
                 "فارسی",
                 "Persian"
@@ -89,12 +88,11 @@
                     "اردیبهشت استودیو",
                     "Ordibehesht Studio"
                 ],
-                "url": "http://ordibeheshtstudio.com"
+                "url": "https://www.ordibeheshtstudio.com/"
             },
             "sameAs": [
                 "https://twitter.com/ordibeheshtstu",
                 "https://www.facebook.com/ordibeheshtstudio",
-                "https://plus.google.com/114682394346276955357",
                 "https://www.linkedin.com/company/ordibehesht-studio/",
                 "https://www.youtube.com/channel/UCA41V9dIiEbGXj8JLpiWolg/",
                 "https://www.instagram.com/ordibeheshtstudio",
@@ -124,13 +122,13 @@
             ],
             "trailer": {
                 "@type": "VideoObject",
-                "name": "کلماتیک بازی حدس کلمه",
-                "url": "https://youtu.be/bGQ7y0c5x5s",
-                "description": "یک بازی بی نهایت جذاب و اعتیادآور که این روزا همه در موردش صحبت میکنن. آسون شروع میشه و خیلی زود شما رو به چالش میکشه. فکر میکنی چندتا کلمه بلدی؟",
+                "name": "تورکلمات | ذهنت رو تیز کن",
+                "url": "https://www.youtube.com/watch?v=IcO4Zrlcslo",
+                "description": "",
                 "duration": "T0M30S",
-                "thumbnailUrl": "https://www.ordibeheshtstudio.com/media/images/Banner.width-1120.jpg",
-                "thumbnail": "https://www.kalamatic.com/img/logo.png",
-                "uploadDate": "2018-07-01"
+                "thumbnailUrl": "https://www.ordibeheshtstudio.com/media/images/WordsTour_Fa_3Y4N9dN.width-1120.jpg",
+                "thumbnail": "https://www.wordstour.com/img/logo.png?v=<%- VERSION %>",
+                "uploadDate": "2019-10-10"
             },
             "playMode": {
                 "@type": "GamePlayMode",
@@ -140,7 +138,7 @@
                 "@type": "QuantitativeValue",
                 "Value": "1"
             },
-            "keywords": "بازی حدس کلمه, بازی با حروف و کلمات, مشابه بازی آمیرزا برای آیفون )iOS), کلماتیک, kalamatic",
+            "keywords": "",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -157,14 +155,24 @@
     </script>
 
     <!-- raychat.io scripts -->
-    <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("rayToken")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="8b7f4e49-c5b3-4a79-9088-a99b024bda2c";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script>
+    <script type="text/javascript">!function () {
+            function t() {
+                var t = document.createElement("script");
+                t.type = "text/javascript", t.async = !0, localStorage.getItem("rayToken") ? t.src = "https://app.raychat.io/scripts/js/" + o + "?rid=" + localStorage.getItem("rayToken") + "&href=" + window.location.href : t.src = "https://app.raychat.io/scripts/js/" + o;
+                var e = document.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(t, e)
+            }
+
+            var e = document, a = window, o = "8b7f4e49-c5b3-4a79-9088-a99b024bda2c";
+            "complete" == e.readyState ? t() : a.attachEvent ? a.attachEvent("onload", t) : a.addEventListener("load", t, !1)
+        }();</script>
 </head>
 
 <body class="welcome">
 <%- include('parts/overlay') %>
 <%- include('parts/header') %>
 <%- include('parts/main') %>
-<%- // include('parts/modal') %>
+<%- // include('parts/modal')  %>
 <%- include('parts/footer') %>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
