@@ -62,8 +62,8 @@ function deploy_gh_pages() {
         }));
 }
 
-watch('./src/page/*.ejs', build_html);
-watch('./src/scss/*.scss', build_styles);
+watch('./src/page/**/*.ejs', build_html);
+watch('./src/scss/**/*.scss', build_styles);
 watch('./src/scripts/**/*', build_scripts);
 watch('./src/static/**/*', build_statics);
 
