@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="fa-ir">
-<% VERSION = "1.0.1"; %>
+<% VERSION = "1.0.2"; %>
 <% URL = "https://www.wordstour.com/"; %>
 <% TITLE = "تورکلمات | ذهنت رو تیز کن"; %>
-<% DESCRIPTION = ""; %>
-<% KEYWORDS = ""; %>
+<% DESCRIPTION = "تور کلمات یه بازی کاملا جدید توی سبک کلمات با مناظر زیبا و دلربا اینجاست تا لحظه های کسل کنندتون رو پر از شادی و سرگرمی کنه! اگه به تازگی با خانواده بازی های کلمه‌ای آشنا شدی حتما این بازی اعتیادآور و پرورش دهنده‌ی ذهن رو نصب کن تا از دنیای جدید کلمات شگفت زده شی! این بازی قلب و ذهن شما رو درگیر پیدا کردن جواب های تور کلمات می‌کنه و میتونه ساعت ها به دور از مشغله های دنیای روزمره سرگرمتون کنه"; %>
+<% KEYWORDS = "کلماتیک,تورکلمات,جواب,بزرگسال,جدول,حدس,فکری,کلمه‌ای,بازی,کلمات"; %>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -31,13 +31,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=<%- VERSION %>">
     <link rel="manifest" href="/site.webmanifest?v=<%- VERSION %>">
     <link rel="mask-icon" href="/safari-pinned-tab.svg?v=<%- VERSION %>" color="#2b5797">
-    <meta name="apple-mobile-web-app-title" content="Words Tour">
-    <meta name="application-name" content="Words Tour">
+    <meta name="apple-mobile-web-app-title" content="تورکلمات">
+    <meta name="application-name" content="تورکلمات">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css?v=<%- VERSION %>">
 
@@ -51,16 +50,14 @@
         }
 
         gtag('js', new Date());
-
         gtag('config', 'UA-102933584-7');
     </script>
-    <!-- Event snippet for Check Landing Page conversion page
-  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
                 if (typeof (url) != 'undefined') {
-                    window.location = url;
+                    window.open(url, '_blank');
                 }
             };
             gtag('event', 'conversion', {
@@ -74,10 +71,10 @@
         {
             "@context": "http://schema.org",
             "@type": "VideoGame",
-            "name": "تورکلمات | ذهنت رو تیز کن",
+            "name": "<%- TITLE %>",
             "url": "https://www.wordstour.com",
             "image": "https://www.wordstour.com/img/logo.png?v=<%- VERSION %>",
-            "description": "",
+            "description": "<%- DESCRIPTION %>",
             "inLanguage": [
                 "فارسی",
                 "Persian"
@@ -138,7 +135,7 @@
                 "@type": "QuantitativeValue",
                 "Value": "1"
             },
-            "keywords": "",
+            "keywords": "<%- KEYWORDS %>",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -152,6 +149,12 @@
                 "ratingCount": "6000"
             }
         }
+
+
+
+
+
+
     </script>
 
     <!-- raychat.io scripts -->
@@ -172,7 +175,6 @@
 <%- include('parts/overlay') %>
 <%- include('parts/header') %>
 <%- include('parts/main') %>
-<%- // include('parts/modal')  %>
 <%- include('parts/footer') %>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
