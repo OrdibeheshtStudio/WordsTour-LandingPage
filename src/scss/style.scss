@@ -8,8 +8,8 @@
     font-weight: normal;
 }
 
-$dark: #371140;
-$light: #fb5a4f;
+$dark: #011f42;
+$light: #085fcb;
 
 @font-face {
     font-family: Sahel;
@@ -40,6 +40,7 @@ body {
     background: $light url("../img/bg.jpg") fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 
     &.welcome {
         // background: #512da8;
@@ -100,7 +101,7 @@ body {
 }
 
 .purple-bg {
-    background-color: $dark !important;
+    background-color: $light !important;
 }
 
 .purple-bg-lighten {
@@ -108,7 +109,7 @@ body {
 }
 
 .havij-bg {
-    background-color: $light !important;
+    background-color: $dark !important;
 }
 
 .justify-align {
@@ -119,6 +120,12 @@ main {
     flex: 1 0 auto;
     padding: 50px 10px 0;
     text-align: center;
+
+    p, h1, h2 {
+        &.white-text {
+            color: $dark !important;
+        }
+    }
 
     @media only screen and (min-width: 601px) {
         text-align: right;
@@ -194,10 +201,11 @@ h1, h2, h3, h4, h5, h6 {
 footer.page-footer {
     padding-top: 0 !important;
 
-    .footer-copyright{
+    .footer-copyright {
         height: 70px !important;
         line-height: 70px;
     }
+
     p {
         margin: 0;
 
